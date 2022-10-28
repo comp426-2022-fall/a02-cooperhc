@@ -23,6 +23,7 @@ async function getData(link){
     const data = await response.json()
     if (args.j){
         console.log(data)
+        process.exit(0)
     }
     else{
         var d = 1
