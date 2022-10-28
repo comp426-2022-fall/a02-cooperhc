@@ -55,8 +55,8 @@ async function getData(link){
 
 function createLink(){
     //define lat / long 
-    var latitude = 50
-    var longitude = 50
+    var latitude = 40.71
+    var longitude = -74
     if(args.n != undefined || args.s != undefined){
         if(args.n != undefined){
             latitude = args.n
