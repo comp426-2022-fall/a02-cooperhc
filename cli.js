@@ -22,7 +22,8 @@ async function getData(link){
     const response = await fetch(link)
     const data = await response.json()
     if (args.j){
-        console.log(data)
+        //console.log(data)
+        console.log('Latitude must be in range')
         process.exit(0)
     }
     else{
@@ -56,7 +57,7 @@ async function getData(link){
 
 function createLink(){
     //define lat / long 
-    var latitude = 40.71
+    var latitude = -100
     var longitude = -74
     if(args.n != undefined || args.s != undefined){
         if(args.n != undefined){
