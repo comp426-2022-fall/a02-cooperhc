@@ -22,8 +22,7 @@ async function getData(link){
     const response = await fetch(link)
     const data = await response.json()
     if (args.j){
-        //console.log(data)
-        console.log('Latitude must be in range')
+        console.log(data)
         process.exit(0)
     }
     else{
